@@ -46,7 +46,26 @@
      .projectcontainer{
       padding-bottom:160px;
      }
+
+     .title h1{
+        color:#111010;
+        text-align: center;
+        padding: 50px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow:-2px -2px 2px rgb(97, 92, 92);
+        font-size:30px;
+        font-weight:bolder;
+      }
+      .imgcontainer img{
+      padding:5px;
+      height:200px;
+      width: 300px;
+      border-radius: 30px;
+      border:5px solid gray;
+      margin:2px;
      }
+     }
+
      /*laptop ending*/
 
 
@@ -75,15 +94,23 @@
         margin-right: 12px;
       }
       .title h1{
-        color:red;
+        color:#111010;
         text-align: center;
         padding: 50px;
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-shadow:4px 2px 1px rgb(200, 201, 211)
+        text-shadow:-2px -2px 2px rgb(97, 92, 92);
+        font-size:30px;
+        font-weight:bolder;
       }
+      .imgcontainer img{
+      padding: 10px;
+      height:200px;
+      width: 300px;
+      border-radius: 30px;
+      border:5px solid gray;
+     }
      }
      /*Mobile ending*/
-
 
       /* for tab*/
       @media(649px <= width <=999px){
@@ -99,7 +126,25 @@
       .name{
         margin-top: 100px;
       }
+      .title h1{
+        color:#111010;
+        text-align: center;
+        padding: 50px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow:-2px -2px 2px rgb(97, 92, 92);
+        font-size:30px;
+        font-weight:bolder;
+      }
+      .imgcontainer img{
+      padding:5px;
+      height:200px;
+      width: 300px;
+      border-radius: 30px;
+      border:5px solid gray;
+      margin:2px;
+     }
      } 
+    
      /*tab ending*/
 
 
@@ -110,20 +155,7 @@
         border: 5px solid whitesmoke;
         border-radius:30px;
       }
-      .title h1{
-        color:red;
-        text-align: center;
-        padding: 50px;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-shadow:3px 2px 1px rgb(33, 38, 87)
-      }
-      .name h1{
-        color:red;
-        text-align: center;
-        padding: 50px;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-shadow:3px 2px 1px rgb(137, 50, 63);
-      }
+      
       .name ul{
         color:rgb(152, 146, 146);
         
@@ -153,13 +185,7 @@
       ul .langheading2{
         color:coral;
       }
-      .edu{
-        color:red;
-        text-align: center;
-        padding: 50px;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-shadow:3px 2px 1px rgb(137, 50, 63);
-      }
+     
       .educontainer ul{
         color:rgb(152, 146, 146);
       }
@@ -175,12 +201,6 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-     }
-     .imgcontainer img{
-      padding: 10px;
-      height:200px;
-      width: 300px;
-      border-radius: 30px;
      }
      .forcenter{
       display:block;
@@ -236,7 +256,7 @@
     <div class="container2" >
       <div class="webtitle">
         <div  class="title">
-          <h1>Iam A Web Developer...</h1>
+          <h1>Iam A Web Developer</h1>
         </div>
         <div class="img1">
           <img src="web1.png">
@@ -245,7 +265,9 @@
       <hr>
       <div class="divspace" id="ravi1"></div>
       <div class="name">
-        <h1>Iam RAVIKUMAR GADALA</h1>
+        <div class="title">
+          <h1>IAM RAVIKUMAR GADALA</h1>
+        </div>
         <div class="ullist1">
           <ul>
             <li>Iam from Rajahmundry East Godavari District Andhra pradesh</li>
@@ -269,7 +291,9 @@
     <hr>
     <div class="divspace" id="ravi2"></div>
     <div class="educontainer">
-      <h1 class="edu">Education :</h1>
+      <div class="title">
+        <h1>Education :</h1>
+      </div>
       <div class="ullist3">
         <ul type="square">
           <li class="edutext">Iam done My BS.c Computer Science in <b>(MCCS) Group</b> From <a href="https://abnprrcollege.edu.in/">ABN & PRR College of Science.</a></li>
@@ -295,7 +319,9 @@
     <hr>
     <div class="divspace" id="ravi3"></div>
     <div class="skillcontainer">
-      <h1 class="edu">Technical Skills :</h1>
+      <div class="title">
+        <h1 class="edu">Technical Skills :</h1>
+      </div>
       <div class="ullist2">
         <ul>
           <li>I was done Certified Course of FullStack Web Development from Entri And Naresh-IT Hydarabad</li>
@@ -316,24 +342,27 @@
     <hr>
     <div class="divspace" id="ravi4"></div>
     <div class="projectcontainer">
-      <h1 class="edu">Projects</h1>
+      <div class="title">
+        <h1>Projects :</h1>
+      </div>
         <div class="imgcontainer">
           <div class="forcenter">
             <div><img src="tour.png"></div>
-            <div><a href="https://ravi6302.github.io/G.RK-Tourism/"><button class="btn btn-primary"><span class="bi bi-arrow-right-circle-fill"></span></button></a></div>
+            <div><a href="https://ravi6302.github.io/G.RK-Tourism/"><button class="btn btn-primary">Tourism Site >></button></a></div>
           </div>
           <div class="forcenter">
             <div><img src="shop.png"></div>
-            <div><a href="https://res-ecom-web.netlify.app/"><button class="btn btn-primary"><span class="bi bi-arrow-right-circle-fill"></span></button></a></div>
+            <div><a href="https://res-ecom-web.netlify.app/"><button class="btn btn-primary">Shoping Site >></button></a></div>
           </div>
           <div class="forcenter">
             <div><img src="wiki.png"></div>
-            <div><a href="https://sfskdlyqaowwimxkynahcg.on.drv.tw/WikipediaSearch/Wikipedia.html"><button class="btn btn-primary"><span class="bi bi-arrow-right-circle-fill"></span></button></a></div>
+            <div><a href="https://sfskdlyqaowwimxkynahcg.on.drv.tw/WikipediaSearch/Wikipedia.html"><button class="btn btn-primary">Wikipedia Site >></button></a></div>
           </div>
           <div class="forcenter">
             <div><img src="cal.png"></div>
-            <div><a href="https://ravi6302.github.io/Calculator/"><button class="btn btn-primary"><span class="bi bi-arrow-right-circle-fill"></span></button></a></div>
+            <div><a href="https://ravi6302.github.io/Calculator/"><button class="btn btn-primary">Calculator >></button></a></div>
           </div>
+  
         </div>
     <!-- Optional JavaScript CDN Links-->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
