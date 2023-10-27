@@ -1,4 +1,4 @@
-<script>
+
     const time = document.getElementById("time");
 
     const weeks = ["sun", "mon", "tue", "wed", "thur", "fri", "sat"];
@@ -16,4 +16,3 @@
     const sentence = `${weeks[week]},${Dates} ${months[month]} ${year}`;
     console.log(sentence);
     time.innerHTML = `${sentence}`;
-</script>
