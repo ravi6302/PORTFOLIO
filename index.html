@@ -1,637 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>MY PORTFOLIO</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrOyr6Rp3vTGOmHfAfc1BKeosWC0j36SXsPQ&usqp=CAU">
-  <style type="text/css">
-    body {
-      background: url('https://th.bing.com/th/id/OIP.pInTAkRblL-XykQgH_Aq0AHaEo?w=258&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7');
-
-    }
-
-    #navbar1 {
-
-      background: linear-gradient(to top, rgb(0, 0, 0), rgb(162, 162, 160));
-    }
-
-    /* for laptop screen*/
-    @media(1000px <=width <=1500px) {
-      nav ul {
-        margin-left: 10px;
+  <head>
+    <title>MY PORTFOLIO</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrOyr6Rp3vTGOmHfAfc1BKeosWC0j36SXsPQ&usqp=CAU"
+    />
+    <style type="text/css">
+      body {
+        background: url("https://th.bing.com/th/id/OIP.pInTAkRblL-XykQgH_Aq0AHaEo?w=258&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7");
       }
 
-      nav ul li {
-        padding-right: 70px;
+      #navbar1 {
+        background: linear-gradient(to top, rgb(0, 0, 0), rgb(162, 162, 160));
       }
 
-      .img1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+      /* for laptop screen*/
+      @media (1000px <=width <=1500px) {
+        nav ul {
+          margin-left: 10px;
+        }
 
-      /* .name{
+        nav ul li {
+          padding-right: 70px;
+        }
+
+        .img1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        /* .name{
         margin-top:10px;
       } */
-      hr {
-        background-color: gray;
-        width: 700px;
-      }
-
-      .educontainer {
-        padding-bottom: 100px;
-      }
-
-      .skillcontainer {
-        padding-bottom: 150px;
-      }
-
-      .projectcontainer {
-        padding-bottom: 400px;
-      }
-      .certificates-container {
-      padding-bottom:240px;
-      padding-top:60px;
-      }
-     .social-container{
-      padding-bottom:310px;
-     }
-
-     .title h1 {
-      text-align: center;
-      padding: 50px;
-      font-family: serif;
-      font-size:40px;
-      filter: drop-shadow(-5px -5px 2px black);
-      color:silver;
-      font-weight: bold;
-    }
-    .in-touch h1{
-      font-family: serif;
-      font-size:40px;
-      filter: drop-shadow(-5px -5px 2px black);
-      color:silver;
-      font-weight: bold;
-    }
-    .imgcontainer img {
-      padding: 5px;
-      height: 200px;
-      width: 300px;
-      border-radius: 30px;
-      border: 5px solid rgb(147, 143, 143);
-      margin: 2px;
-    }
-
-    .imgcontainer a {
-      text-decoration: none;
-    }
-
-    .imgcontainer button {
-      background: linear-gradient(to top, rgb(0, 0, 0), rgb(202, 202, 199));
-      border-radius: 10px;
-      padding: 10px;
-      color: rgb(253, 255, 255);
-      font-weight: bold;
-      text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.993);
-    }
-
-    .navbar ul li a {
-      color: rgb(253, 255, 255);
-      font-weight: bold;
-      text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.993);
-    }
-
-    .navbar>a {
-      margin-left: 30px;
-      font-weight: bold;
-      text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.993);
-      color: coral;
-
-    }
-
-    .individu-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: gray;
-      border-radius: 20px;
-      padding: 10px;
-      margin-bottom: 20px;
-      width: 385px;
-      height: 110px;
-      border: 5px solid rgb(253, 250, 250);
-
-    }
-
-    .individu-container button {
-      border-radius: 10px;
-      background: linear-gradient(to top, black, gray);
-      border: 3px solid black;
-      color: white;
-      width: 270px;
-      padding-left: 10px;
-      font-weight: bold;
-      text-align: center;
-    }
-    }
-
-    /*laptop ending*/
-
-
-    /* for Mobile*/
-    @media(0px <=width <=650px) {
-      .img1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .img1 img {
-        width: 350px;
-        height: 250px;
-      }
-
-      hr {
-        background-color: rgb(190, 177, 177);
-        width: 300px;
-      }
-
-      nav ul {
-        margin-left: 20px;
-      }
-
-      nav .navbar-brand {
-        margin-left: 20px;
-      }
-
-      nav .navbar-toggler {
-        margin-right: 12px;
-      }
-      .title h1 {
-      text-align: center;
-      padding: 50px;
-      font-family: serif;
-      font-size:40px;
-      filter: drop-shadow(-5px -5px 2px black);
-      color:silver;
-      font-weight: bold;
-    }
-    .in-touch h1{
-      font-family: serif;
-      font-size:40px;
-      filter: drop-shadow(-5px -5px 2px black);
-      color:silver;
-      font-weight: bold;
-    }
-
-      .imgcontainer img {
-        padding: 10px;
-        height: 200px;
-        width: 300px;
-        border-radius: 30px;
-        border: 10px solid rgb(168, 164, 164);
-      }
-
-      .imgcontainer a {
-        text-decoration: none;
-      }
-
-      .imgcontainer button {
-        background: linear-gradient(to top, rgb(0, 0, 0), rgb(202, 202, 199));
-        border-radius: 10px;
-        color: rgb(253, 255, 255);
-        padding: 10px;
-        font-weight: bold;
-        text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.993);
-      }
-
-      .navbar ul li a {
-        color: rgb(253, 255, 255);
-        font-weight: bold;
-        text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.993);
-      }
-
-      .navbar>a {
-        margin-left: 30px;
-        font-weight: bold;
-        text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.993);
-        color: coral;
-      }
-
-      .individu-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: gray;
-        border-radius: 20px;
-        padding: 10px;
-        margin-bottom: 20px;
-        width: 380px;
-        height: 110px;
-        border: 5px solid rgb(253, 250, 250);
-
-      }
-
-      .individu-container button {
-        border-radius: 10px;
-        background: linear-gradient(to top, black, gray);
-        border: 3px solid black;
-        color: white;
-        width: 270px;
-        display: flex;
-        justify-content: flex-start;
-        font-weight: bold;
-
-      }
-    }
-
-    /*Mobile ending*/
-
-    /* for tab*/
-    @media(649px <=width <=999px) {
-      .img1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .img1 img {
-        width: 650px;
-        height: 400px;
-      }
-
-      .name {
-        margin-top: 100px;
-      }
-
-      .title h1 {
-      text-align: center;
-      padding: 50px;
-      font-family: serif;
-      font-size:40px;
-      filter: drop-shadow(-5px -5px 2px black);
-      color:silver;
-      font-weight: bold;
-    }
-    .in-touch h1{
-      font-family: serif;
-      font-size:40px;
-      filter: drop-shadow(-5px -5px 2px black);
-      color:silver;
-      font-weight: bold;
-    }
-      .imgcontainer img {
-        padding: 5px;
-        height: 200px;
-        width: 300px;
-        border-radius: 30px;
-        border: 5px solid gray;
-        margin: 2px;
-      }
-
-      .navbar ul li a {
-        color: rgb(253, 255, 255);
-        font-weight: bold;
-        text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.993);
-      }
-
-      .navbar>a {
-        margin-left: 30px;
-        font-weight: bold;
-        text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.993);
-        color: coral;
-      }
-
-      .individu-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: gray;
-        border-radius: 20px;
-        padding: 10px;
-        margin-bottom: 20px;
-        width: 385px;
-        height: 110px;
-        border: 5px solid rgb(253, 250, 250);
-
-      }
-
-      .individu-container button {
-        border-radius: 10px;
-        background: linear-gradient(to top, black, gray);
-        border: 3px solid black;
-        color: white;
-        width: 270px;
-        font-weight: bold;
-        padding-left: 10px;
-        text-align: center;
-
-      }
-    }
-
-    /*tab ending*/
-
-
-    .container2 {
-      margin-top: 10px;
-    }
-
-    .img1 img {
-      border: 5px solid whitesmoke;
-      border-radius: 30px;
-    }
-
-    .name ul {
-      color: rgb(152, 146, 146);
-
-    }
-
-    .ullist1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .ullist2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .ullist2 li {
-      color: blanchedalmond;
-    }
-
-    .langcolor {
-      color: violet;
-    }
-
-    .langheading {
-      color: rgb(200, 177, 103);
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    ul .langcolor2 {
-      color: violet;
-    }
-
-    ul .langheading2 {
-      color: rgb(200, 177, 103);
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .educontainer ul {
-      color: rgb(152, 146, 146);
-    }
-
-    .ullist3 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    ul .edutext {
-      color: rgb(243, 168, 107);
-    }
-
-    .imgcontainer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .forcenter {
-      display: block;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 30px;
-    }
-
-    .forcenter a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .forcenter a button {
-      text-decoration: none;
-    }
-
-    .forcenter span {
-      font-size: 25px;
-    }
-
-    .divspace {
-      height: 20px;
-    }
-
-    .certificate-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      justify-content: space-evenly;
-    }
-
-    .certificates-container div img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      border: 5px solid black;
-    }
-    .certificate-text{
-      font-size:25px;
-      text-align: center;
-      font-family:serif;
-      text-shadow: -2px -2px 2px rgb(0, 0, 0);
-      padding:10px;
-      color: rgb(225, 221, 221);
-    }
-
-    .child-social-container{
-      display: flex;
-      justify-content: center;
-      justify-content: space-evenly;
-      font-size: 40px;
-    }
-  
-
-    /* prathee container ki ichina gaps means nav lo edina button nokkite same page lo inko content rakunda ichuna space anni laptop media queries lo unnay check above...*/
-
-    div .social1 a{
-    color:rgba(44, 93, 215, 0.913);
-    }
-    div .social2 a{
-    color:black;
-    }
-    div .social4 a{
-    color:rgb(245, 32, 32);
-    }
-    div .social1,.social2,.social3,.social4{
-    background:linear-gradient(to top right,black,white,white,rgb(24, 24, 24),rgb(255, 255, 255));
-    padding:20px;
-    border-radius:100%;
-    margin-bottom: 20px;
-    }
-    .certificate-title h1{
-      color:rgba(187, 198, 24, 0.548);
-      text-shadow: -2px -2px 0px rgb(255, 255, 255);
-      text-align: center;
-      font-family:serif;
-      font-weight: bolder;
-      font-size:40px;
-    }
-    .lang-logos{
-      display: flex;
-      flex-direction: row;
-      row-gap:15px;
-      column-gap:15px;
-      flex-wrap:wrap;
-      justify-content: center;
-      align-items: center;
-    }
-    .lang-logos div a img{
-      width:100px;
-      height: 100px;
-      border:5px solid black;
-     border-top-left-radius: 20px;
-     border-bottom-right-radius: 20px;
-    }
-    .lang-logos div a img:hover{
-      filter:drop-shadow(5px 5px 5px rgb(0, 0, 0));
-    }
-     #time{
+        hr {
+          background-color: gray;
+          width: 700px;
+        }
+
+        .educontainer {
+          padding-bottom: 100px;
+        }
+
+        .skillcontainer {
+          padding-bottom: 150px;
+        }
+
+        .projectcontainer {
+          padding-bottom: 400px;
+        }
+        .certificates-container {
+          padding-bottom: 240px;
+          padding-top: 60px;
+        }
+        .social-container {
+          padding-bottom: 310px;
+        }
+
+        .title h1 {
+          text-align: center;
+          padding: 50px;
+          font-family: serif;
+          font-size: 40px;
+          filter: drop-shadow(-5px -5px 2px black);
+          color: silver;
+          font-weight: bold;
+        }
+        .in-touch h1 {
+          font-family: serif;
+          font-size: 40px;
+          filter: drop-shadow(-5px -5px 2px black);
+          color: silver;
+          font-weight: bold;
+        }
+        .imgcontainer img {
+          padding: 5px;
+          height: 200px;
+          width: 300px;
+          border-radius: 30px;
+          border: 5px solid rgb(147, 143, 143);
+          margin: 2px;
+        }
+
+        .imgcontainer a {
+          text-decoration: none;
+        }
+
+        .imgcontainer button {
+          background: linear-gradient(to top, rgb(0, 0, 0), rgb(202, 202, 199));
+          border-radius: 10px;
+          padding: 10px;
+          color: rgb(253, 255, 255);
+          font-weight: bold;
+          text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.993);
+        }
+
+        .navbar ul li a {
+          color: rgb(253, 255, 255);
+          font-weight: bold;
+          text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.993);
+        }
+
+        .navbar > a {
+          margin-left: 30px;
+          font-weight: bold;
+          text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.993);
+          color: coral;
+        }
+
+        .individu-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: gray;
+          border-radius: 20px;
+          padding: 10px;
+          margin-bottom: 20px;
+          width: 385px;
+          height: 110px;
+          border: 5px solid rgb(253, 250, 250);
+        }
+
+        .individu-container button {
+          border-radius: 10px;
+          background: linear-gradient(to top, black, gray);
+          border: 3px solid black;
+          color: white;
+          width: 270px;
+          padding-left: 10px;
+          font-weight: bold;
+          text-align: center;
+        }
+        #time{
         display: flex;
         justify-content:flex-end;
         color:whitesmoke;
         font-size:20px;
         font-weight: bold;
+       margin-right: 20PX;
+       margin-top:250PX;
       }
-  </style>
-</head>
+      }
 
-<body>
+      /*laptop ending*/
 
-  <div>
+      /* for Mobile*/
+      @media (0px <=width <=650px) {
+        .img1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .img1 img {
+          width: 350px;
+          height: 250px;
+        }
+
+        hr {
+          background-color: rgb(190, 177, 177);
+          width: 300px;
+        }
+
+        nav ul {
+          margin-left: 20px;
+        }
+
+        nav .navbar-brand {
+          margin-left: 20px;
+        }
+
+        nav .navbar-toggler {
+          margin-right: 12px;
+        }
+        .title h1 {
+          text-align: center;
+          padding: 50px;
+          font-family: serif;
+          font-size: 40px;
+          filter: drop-shadow(-5px -5px 2px black);
+          color: silver;
+          font-weight: bold;
+        }
+        .in-touch h1 {
+          font-family: serif;
+          font-size: 40px;
+          filter: drop-shadow(-5px -5px 2px black);
+          color: silver;
+          font-weight: bold;
+        }
+
+        .imgcontainer img {
+          padding: 10px;
+          height: 200px;
+          width: 300px;
+          border-radius: 30px;
+          border: 10px solid rgb(168, 164, 164);
+        }
+
+        .imgcontainer a {
+          text-decoration: none;
+        }
+
+        .imgcontainer button {
+          background: linear-gradient(to top, rgb(0, 0, 0), rgb(202, 202, 199));
+          border-radius: 10px;
+          color: rgb(253, 255, 255);
+          padding: 10px;
+          font-weight: bold;
+          text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.993);
+        }
+
+        .navbar ul li a {
+          color: rgb(253, 255, 255);
+          font-weight: bold;
+          text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.993);
+        }
+
+        .navbar > a {
+          margin-left: 30px;
+          font-weight: bold;
+          text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.993);
+          color: coral;
+        }
+
+        .individu-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: gray;
+          border-radius: 20px;
+          padding: 10px;
+          margin-bottom: 20px;
+          width: 380px;
+          height: 110px;
+          border: 5px solid rgb(253, 250, 250);
+        }
+
+        .individu-container button {
+          border-radius: 10px;
+          background: linear-gradient(to top, black, gray);
+          border: 3px solid black;
+          color: white;
+          width: 270px;
+          display: flex;
+          justify-content: flex-start;
+          font-weight: bold;
+        }
+        #time{
+        display: flex;
+        justify-content:flex-end;
+        color:whitesmoke;
+        font-size:20px;
+        font-weight: bold;
+        margin-right: 20PX;
+        margin-bottom:10px;
+      }
+      }
+
+      /*Mobile ending*/
+
+      /* for tab*/
+      @media (649px <=width <=999px) {
+        .img1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .img1 img {
+          width: 650px;
+          height: 400px;
+        }
+
+        .name {
+          margin-top: 100px;
+        }
+
+        .title h1 {
+          text-align: center;
+          padding: 50px;
+          font-family: serif;
+          font-size: 40px;
+          filter: drop-shadow(-5px -5px 2px black);
+          color: silver;
+          font-weight: bold;
+        }
+        .in-touch h1 {
+          font-family: serif;
+          font-size: 40px;
+          filter: drop-shadow(-5px -5px 2px black);
+          color: silver;
+          font-weight: bold;
+        }
+        .imgcontainer img {
+          padding: 5px;
+          height: 200px;
+          width: 300px;
+          border-radius: 30px;
+          border: 5px solid gray;
+          margin: 2px;
+        }
+
+        .navbar ul li a {
+          color: rgb(253, 255, 255);
+          font-weight: bold;
+          text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.993);
+        }
+
+        .navbar > a {
+          margin-left: 30px;
+          font-weight: bold;
+          text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.993);
+          color: coral;
+        }
+
+        .individu-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: gray;
+          border-radius: 20px;
+          padding: 10px;
+          margin-bottom: 20px;
+          width: 385px;
+          height: 110px;
+          border: 5px solid rgb(253, 250, 250);
+        }
+
+        .individu-container button {
+          border-radius: 10px;
+          background: linear-gradient(to top, black, gray);
+          border: 3px solid black;
+          color: white;
+          width: 270px;
+          font-weight: bold;
+          padding-left: 10px;
+          text-align: center;
+        }
+      }
+
+      /*tab ending*/
+
+      .container2 {
+        margin-top: 10px;
+      }
+
+      .img1 img {
+        border: 5px solid whitesmoke;
+        border-radius: 30px;
+      }
+
+      .name ul {
+        color: rgb(152, 146, 146);
+      }
+
+      .ullist1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .ullist2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .ullist2 li {
+        color: blanchedalmond;
+      }
+
+      .langcolor {
+        color: violet;
+      }
+
+      .langheading {
+        color: rgb(200, 177, 103);
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      ul .langcolor2 {
+        color: violet;
+      }
+
+      ul .langheading2 {
+        color: rgb(200, 177, 103);
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .educontainer ul {
+        color: rgb(152, 146, 146);
+      }
+
+      .ullist3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      ul .edutext {
+        color: rgb(243, 168, 107);
+      }
+
+      .imgcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .forcenter {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+
+      .forcenter a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .forcenter a button {
+        text-decoration: none;
+      }
+
+      .forcenter span {
+        font-size: 25px;
+      }
+
+      .divspace {
+        height: 20px;
+      }
+
+      .certificate-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .certificates-container div img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid black;
+      }
+      .certificate-text {
+        font-size: 25px;
+        text-align: center;
+        font-family: serif;
+        text-shadow: -2px -2px 2px rgb(0, 0, 0);
+        padding: 10px;
+        color: rgb(225, 221, 221);
+      }
+
+      .child-social-container {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        font-size: 40px;
+      }
+
+      /* prathee container ki ichina gaps means nav lo edina button nokkite same page lo inko content rakunda ichuna space anni laptop media queries lo unnay check above...*/
+
+      div .social1 a {
+        color: rgba(44, 93, 215, 0.913);
+      }
+      div .social2 a {
+        color: black;
+      }
+      div .social4 a {
+        color: rgb(245, 32, 32);
+      }
+      div .social1,
+      .social2,
+      .social3,
+      .social4 {
+        background: linear-gradient(
+          to top right,
+          black,
+          white,
+          white,
+          rgb(24, 24, 24),
+          rgb(255, 255, 255)
+        );
+        padding: 20px;
+        border-radius: 100%;
+        margin-bottom: 20px;
+      }
+      .certificate-title h1 {
+        color: rgba(187, 198, 24, 0.548);
+        text-shadow: -2px -2px 0px rgb(255, 255, 255);
+        text-align: center;
+        font-family: serif;
+        font-weight: bolder;
+        font-size: 40px;
+      }
+      .lang-logos {
+        display: flex;
+        flex-direction: row;
+        row-gap: 15px;
+        column-gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .lang-logos div a img {
+        width: 100px;
+        height: 100px;
+        border: 5px solid black;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      .lang-logos div a img:hover {
+        filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+      }
+   
+      
+    </style>
+  </head>
+
+  <body>
     <div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top" id="navbar1">
-        <a class="navbar-brand" href="#ravi" class="portfolio">Portfolio</a>
-        <button class="navbar-toggler" type="button" data-target="#head" data-toggle="collapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="head" class="collapse navbar-collapse">
-          <ul class="navbar-nav">
-            <li class="nav-item ">
-              <a class="nav-link" href="#ravi1">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#ravi2">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#ravi3">Technical Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#ravi4">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#ravi5">My Certifications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#ravi6">Get In Touch</a>
-            </li>
+      <div>
+        <nav
+          class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top"
+          id="navbar1"
+        >
+          <a class="navbar-brand" href="#ravi" class="portfolio">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-target="#head"
+            data-toggle="collapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="head" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#ravi1">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ravi2">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ravi3">Technical Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ravi4">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ravi5">My Certifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ravi6">Get In Touch</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="divspace" id="ravi"></div>
+    <div class="container2">
+      <div class="webtitle">
+        <div class="title">
+          <h1>Iam A Web Developer</h1>
+        </div>
+        <div class="img1">
+          <img src="web1.png" />
+        </div>
+      </div>
+      <hr />
+      <div class="divspace" id="ravi1"></div>
+      <div class="name">
+        <div class="title">
+          <h1>IAM RAVIKUMAR GADALA</h1>
+        </div>
+        <div class="ullist1">
+          <ul>
+            <li>Iam from Rajahmundry East Godavari District Andhra pradesh</li>
+            <li>Iam a BS.c Computer Science Graduate.</li>
+            <li>Iam a fresher</li>
+            <li>Looking For Jobs</li>
+            <li class="langheading">Having Knoledge on Technologies Like :-</li>
+            <li class="langcolor">HTML</li>
+            <li class="langcolor">CSS-3</li>
+            <li class="langcolor">BootStrap</li>
+            <li class="langcolor">Java Script</li>
+            <li class="langcolor">React.js</li>
+            <li class="langcolor">Express.js</li>
+            <li class="langcolor">Node.js</li>
+            <li class="langcolor">Sql</li>
+            <li class="langcolor">MongoDb</li>
           </ul>
         </div>
-      </nav>
-    </div>
-  </div>
-  <div class="divspace" id="ravi"></div>
-  <div class="container2">
-    <div class="webtitle">
-      <div class="title">
-        <h1>Iam A Web Developer</h1>
-      </div>
-      <div class="img1">
-        <img src="web1.png">
       </div>
     </div>
-    <hr>
-    <div class="divspace" id="ravi1"></div>
-    <div class="name">
+    <hr />
+    <div class="divspace" id="ravi2"></div>
+    <div class="educontainer">
       <div class="title">
-        <h1>IAM RAVIKUMAR GADALA</h1>
+        <h1>Education :</h1>
       </div>
-      <div class="ullist1">
-        <ul>
-          <li>Iam from Rajahmundry East Godavari District Andhra pradesh</li>
-          <li>Iam a BS.c Computer Science Graduate.</li>
-          <li>Iam a fresher</li>
-          <li>Looking For Jobs</li>
-          <li class="langheading">Having Knoledge on Technologies Like :-</li>
-          <li class="langcolor">HTML</li>
-          <li class="langcolor">CSS-3</li>
-          <li class="langcolor">BootStrap</li>
-          <li class="langcolor">Java Script</li>
-          <li class="langcolor">React.js</li>
-          <li class="langcolor">Express.js</li>
-          <li class="langcolor">Node.js</li>
-          <li class="langcolor">Sql</li>
-          <li class="langcolor">MongoDb</li>
+      <div class="ullist3">
+        <ul type="square">
+          <li class="edutext">
+            Iam done My BS.c Computer Science in <b>(MCCS) Group</b> From
+            <a href="https://abnprrcollege.edu.in/"
+              >ABN & PRR College of Science.</a
+            >
+          </li>
+          <li class="edutext">At Kovvur.</li>
+          <li class="edutext">West Godavari District Andhra Pradesh.</li>
+        </ul>
+      </div>
+      <br />
+      <div class="ullist3">
+        <ul type="square">
+          <li class="edutext">
+            I Completed My Intermediate <b>(MPC)</b> Group From Pragati Junior
+            College Rajahmundry.
+          </li>
+          <li class="edutext">East Godavari District Andhra Pradesh.</li>
+        </ul>
+      </div>
+      <br />
+      <div class="ullist3">
+        <ul type="square">
+          <li class="edutext">
+            I was Done My Schooling From
+            <a
+              href="https://www.google.com/local/place/fid/0x3a37a7f6321b6f0f:0x9f43d0a4395b3c6d/photosphere?iu=https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid%3DW-QNpBW4Qzn6nDk3TTNESA%26cb_client%3Dlu.gallery.gps%26w%3D160%26h%3D106%26yaw%3D45.62495%26pitch%3D0%26thumbfov%3D100&ik=CAISFlctUU5wQlc0UXpuNm5EazNUVE5FU0E%3D"
+              >ZPH School</a
+            >
+            in My Village Torredu.
+          </li>
+          <li class="edutext">East Godavari District Andhra Pradesh.</li>
         </ul>
       </div>
     </div>
-  </div>
-  <hr>
-  <div class="divspace" id="ravi2"></div>
-  <div class="educontainer">
-    <div class="title">
-      <h1>Education :</h1>
-    </div>
-    <div class="ullist3">
-      <ul type="square">
-        <li class="edutext">Iam done My BS.c Computer Science in <b>(MCCS) Group</b> From <a
-            href="https://abnprrcollege.edu.in/">ABN & PRR College of Science.</a></li>
-        <li class="edutext">At Kovvur.</li>
-        <li class="edutext">West Godavari District Andhra Pradesh.</li>
-      </ul>
-    </div>
-    <br>
-    <div class="ullist3">
-      <ul type="square">
-        <li class="edutext">I Completed My Intermediate <b>(MPC)</b> Group From Pragati Junior College Rajahmundry.</li>
-        <li class="edutext">East Godavari District Andhra Pradesh.</li>
-      </ul>
-    </div>
-    <br>
-    <div class="ullist3">
-      <ul type="square">
-        <li class="edutext">I was Done My Schooling From <a
-            href="https://www.google.com/local/place/fid/0x3a37a7f6321b6f0f:0x9f43d0a4395b3c6d/photosphere?iu=https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid%3DW-QNpBW4Qzn6nDk3TTNESA%26cb_client%3Dlu.gallery.gps%26w%3D160%26h%3D106%26yaw%3D45.62495%26pitch%3D0%26thumbfov%3D100&ik=CAISFlctUU5wQlc0UXpuNm5EazNUVE5FU0E%3D">ZPH
-            School</a> in My Village Torredu.</li>
-        <li class="edutext">East Godavari District Andhra Pradesh.</li>
-      </ul>
-    </div>
-  </div>
-  <hr>
-  <div class="divspace" id="ravi3"></div>
-  <div class="skillcontainer">
-    <div class="title">
-      <h1 class="edu">Technical Skills :</h1>
-    </div>
-    <div class="ullist2">
-      <ul>
-        <li>I was done Certified Course of FullStack Web Development from Entri And Naresh-IT Hydarabad</li>
-        <li>The Course Is All About Creating Beautiful Interfce with Responsive Design and Functionality.</li>
-        <li class="langheading2">I Use the Bellow Languages to Create Web Applications :-</li>
-        
-        <!-- <li class="langcolor2">HTML-5</li>
+    <hr />
+    <div class="divspace" id="ravi3"></div>
+    <div class="skillcontainer">
+      <div class="title">
+        <h1 class="edu">Technical Skills :</h1>
+      </div>
+      <div class="ullist2">
+        <ul>
+          <li>
+            I was done Certified Course of FullStack Web Development from Entri
+            And Naresh-IT Hydarabad
+          </li>
+          <li>
+            The Course Is All About Creating Beautiful Interfce with Responsive
+            Design and Functionality.
+          </li>
+          <li class="langheading2">
+            I Use the Bellow Languages to Create Web Applications :-
+          </li>
+
+          <!-- <li class="langcolor2">HTML-5</li>
         <li class="langcolor2">CSS 3</li>
         <li class="langcolor2">BootStrap</li>
         <li class="langcolor2">Java Script</li>
@@ -640,84 +686,130 @@
         <li class="langcolor2">Node.js</li>
         <li class="langcolor2">Sql</li>
         <li class="langcolor2">MongoDB</li> -->
-      </ul>
+        </ul>
+      </div>
+
+      <div class="lang-logos">
+        <div>
+          <a href="https://html.spec.whatwg.org/"><img src="html.png" /></a>
+        </div>
+        <div>
+          <a href="https://www.w3.org/TR/CSS/#css"><img src="css.png" /></a>
+        </div>
+        <div>
+          <a href="https://getbootstrap.com/"><img src="bootstrap.png" /></a>
+        </div>
+        <div>
+          <a href="https://www.javascript.com/"><img src="javaScript.png" /></a>
+        </div>
+        <div>
+          <a href="https://react.dev/"><img src="reactjs.png" /></a>
+        </div>
+        <div>
+          <a href="https://nodejs.org/en"><img src="nodejs.png" /></a>
+        </div>
+        <div>
+          <a href="https://expressjs.com/"><img src="expressjs.png" /></a>
+        </div>
+        <div>
+          <a href="https://www.mysql.com/"><img src="sql.png" /></a>
+        </div>
+        <div>
+          <a href="https://www.mongodb.com/"><img src="mongodb.png" /></a>
+        </div>
+      </div>
     </div>
 
-    <div class="lang-logos">
-      <div><a href="https://html.spec.whatwg.org/"><img src="html.png"></a></div>
-      <div><a href="https://www.w3.org/TR/CSS/#css"><img src="css.png"></a></div>
-      <div><a href="https://getbootstrap.com/"><img src="bootstrap.png"></a></div>
-      <div><a href="https://www.javascript.com/"><img src="javaScript.png"></a></div>
-      <div><a href="https://react.dev/"><img src="reactjs.png"></a></div>
-      <div><a href="https://nodejs.org/en"><img src="nodejs.png"></a></div>
-      <div><a href="https://expressjs.com/"><img src="expressjs.png"></a></div>
-      <div><a href="https://www.mysql.com/"><img src="sql.png"></a></div>
-      <div><a href="https://www.mongodb.com/"><img src="mongodb.png"></a></div>
+    <hr />
+    <div class="divspace" id="ravi4"></div>
+    <div class="projectcontainer">
+      <div class="title">
+        <h1>Projects :</h1>
+      </div>
+      <div class="imgcontainer">
+        <div class="forcenter">
+          <div><img src="tour.png" /></div>
+          <div>
+            <a href="https://ravi6302.github.io/G.RK-Tourism/"
+              ><button>Tourism Site >></button></a
+            >
+          </div>
+        </div>
+        <div class="forcenter">
+          <div><img src="shop.png" /></div>
+          <div>
+            <a href="https://res-ecom-web.netlify.app/"
+              ><button>Shoping Site >></button></a
+            >
+          </div>
+        </div>
+        <div class="forcenter">
+          <div><img src="wiki.png" /></div>
+          <div>
+            <a
+              href="https://sfskdlyqaowwimxkynahcg.on.drv.tw/WikipediaSearch/Wikipedia.html"
+            >
+              <button>Wikipedia Site >></button>
+            </a>
+          </div>
+        </div>
+        <div class="forcenter">
+          <div><img src="cal.png" /></div>
+          <div>
+            <a href="https://ravi6302.github.io/Calculator/">
+              <button>Calculator >></button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <hr>
-  <div class="divspace" id="ravi4"></div>
-  <div class="projectcontainer">
-    <div class="title">
-      <h1>Projects :</h1>
-    </div>
-    <div class="imgcontainer">
-      <div class="forcenter">
-        <div><img src="tour.png"></div>
-        <div><a href="https://ravi6302.github.io/G.RK-Tourism/"><button>Tourism Site >></button></a></div>
-      </div>
-      <div class="forcenter">
-        <div><img src="shop.png"></div>
-        <div><a href="https://res-ecom-web.netlify.app/"><button>Shoping Site >></button></a></div>
-      </div>
-      <div class="forcenter">
-        <div><img src="wiki.png"></div>
-        <div><a href="https://sfskdlyqaowwimxkynahcg.on.drv.tw/WikipediaSearch/Wikipedia.html"><button>Wikipedia Site
-              >></button></a></div>
-      </div>
-      <div class="forcenter">
-        <div><img src="cal.png"></div>
-        <div><a href="https://ravi6302.github.io/Calculator/"><button>Calculator >></button></a></div>
-      </div>
-    </div>
-  </div>
     <div id="ravi5"></div>
     <div class="certificates-container">
       <div class="certificate-title">
         <h1>My Certifications</h1>
       </div>
       <div class="certificate-text">
-        
-          <p>Here Are My Certificates, Which I Got From Different Organizations. For Successfully Completed The Courses
-            And Tasks . Have A Look On Them....</p>
-        
+        <p>
+          Here Are My Certificates, Which I Got From Different Organizations.
+          For Successfully Completed The Courses And Tasks . Have A Look On
+          Them....
+        </p>
       </div>
       <div class="certificate-grid">
         <div class="individu-container">
-          <a href="https://www.freecodecamp.org/certification/fcc4aab4d59-d1e2-49e8-8407-e707cf010378/responsive-web-design"
-            target="_blank"><img src="freecode-camp-logo.png" alt=" Freecode-camp-certificate"></a>
+          <a
+            href="https://www.freecodecamp.org/certification/fcc4aab4d59-d1e2-49e8-8407-e707cf010378/responsive-web-design"
+            target="_blank"
+            ><img src="freecode-camp-logo.png" alt=" Freecode-camp-certificate"
+          /></a>
           <div><button>Certificate From Code-Camp.</button></div>
         </div>
         <div class="individu-container">
-          <a href="https://drive.google.com/file/d/1jAINydmxISP_yGq3xfmM7Odxoy5KVmta/view?usp=sharing"
-            target="_blank"><img
+          <a
+            href="https://drive.google.com/file/d/1jAINydmxISP_yGq3xfmM7Odxoy5KVmta/view?usp=sharing"
+            target="_blank"
+            ><img
               src="https://play-lh.googleusercontent.com/Pivg31JOdgfNpKrHhy-Bg83qrvhMtW8dIq9xsnuIGcYZ_8Jq1LIFQUdCE-uYkSVWLw"
-              alt="Entri-certificate"></a>
+              alt="Entri-certificate"
+          /></a>
           <div><button>Certificate From Entri-Elevate.</button></div>
         </div>
         <div class="individu-container">
-          <a href="https://drive.google.com/file/d/1ZhOgAI3xwEiU-hG3ppnrnAJmG9RVLOiY/view?usp=sharing"
-            target="_blank"><img
+          <a
+            href="https://drive.google.com/file/d/1ZhOgAI3xwEiU-hG3ppnrnAJmG9RVLOiY/view?usp=sharing"
+            target="_blank"
+            ><img
               src="https://play-lh.googleusercontent.com/VYUXP5SK4FR3o5iAPSL2OGg11ZM8TAjbp22MynXtx3hkZfpYsBBEJwJ81sUWuYZFxyQ"
-              alt="NareshIT-certificate"></a>
+              alt="NareshIT-certificate"
+          /></a>
           <div><button>Certificate From Naresh-IT.</button></div>
         </div>
         <div class="individu-container">
-          <a href="https://www.credly.com/users/ravikumar-gadala"
-            target="_blank"><img
-              src="credly.png"
-              alt="Certificate Badge From Credly"></a>
+          <a
+            href="https://www.credly.com/users/ravikumar-gadala"
+            target="_blank"
+            ><img src="credly.png" alt="Certificate Badge From Credly"
+          /></a>
           <div><button>Badge From Illinois Tech.</button></div>
         </div>
       </div>
@@ -730,36 +822,51 @@
       </div>
       <div class="child-social-container">
         <div class="social1">
-          <a href="https://www.linkedin.com/in/ravi-kumar-gadala-4a2786253/"><span  class="bi bi-linkedin"></span></a>
+          <a href="https://www.linkedin.com/in/ravi-kumar-gadala-4a2786253/"
+            ><span class="bi bi-linkedin"></span
+          ></a>
         </div>
         <div class="social2">
-          <a href="https://github.com/ravi6302"><span class="bi bi-github"></span></a>
+          <a href="https://github.com/ravi6302"
+            ><span class="bi bi-github"></span
+          ></a>
         </div>
         <div class="social3">
-          <a href="https://twitter.com/gadala_ravi"><span class="bi bi-twitter"></span></a>
+          <a href="https://twitter.com/gadala_ravi"
+            ><span class="bi bi-twitter"></span
+          ></a>
         </div>
         <div class="social4">
-          <a href="https://www.instagram.com/ravikumar_artgallery/"><span class="bi bi-instagram"></span></a>
+          <a href="https://www.instagram.com/ravikumar_artgallery/"
+            ><span class="bi bi-instagram"></span
+          ></a>
         </div>
-
       </div>
+      <div id="time"></div>
     </div>
-    <div id="time"></div>
+ <div><div id="time"></div></div>
  <script src="time.js" type="text/javaScript">
   // dont worry code comes from time.js file 
  </script>
+
+    </script>
     <!-- Optional JavaScript CDN Links-->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
-</body>
-
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
